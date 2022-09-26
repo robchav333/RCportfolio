@@ -49,11 +49,17 @@
    text-decoration: none;
    font-weight: bold;
    text-transform: capitalize;
+   list-style-type: none;
  }
 
  nav ul li a:hover {
    color: #f9004d;
    transition: .4s;
+   list-style-type: none;
+ }
+
+ li {
+   list-style-type: none;
  }
 
  a {
@@ -175,3 +181,42 @@
    .container .heading h3 {
      font-size: 1em;
    }
+
+
+   .tess {
+       position: relative;
+       width: 400px;
+   }
+   .image_img {
+       display: block;
+       width: 100%;
+   }
+
+
+
+   .thisoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    weight: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+    transition: opacity 0.4s ease-in-out;
+}
+.title_overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: aqua;
+  text-align: center;
+
+}
+
+.image:hover .overlay{
+  opacity: 0.4;
+}
